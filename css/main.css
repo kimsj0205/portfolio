@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{color:inherit; text-decoration:none;}
+html {scroll-behavior: smooth;}
+body{background-color:#3CB5BF;  font-family: 'Unna', serif; padding-top:130px;}
+
+
+/* popup */
+.popup_wrap3 {width:100%; height:100%;background-color:rgba(0, 0, 0,.5); position:fixed; top:0; z-index:9999; display:none;}
+.popup_wrap3 .popup3 {width:200px; margin:0 auto; padding-top:5%;}
+.popup_wrap3 .popup3 img{width:200px;object-fit: scale-down;}
+
+.popup_wrap4 {width:100%; height:100%;background-color:rgba(0, 0, 0,.5); position:fixed; top:0; z-index:9999; display:none;}
+.popup_wrap4 .popup4 {width:1400px; margin:0 auto; padding-top:5%;}
+.popup_wrap4 .popup4 img{object-fit: scale-down;}
+
+.popup{cursor:pointer;}
+/* main video */
+
+p {font-family: 'Noto Serif KR', serif;}
+
+.inner{width:1200px; margin:0 auto;}
+
+/* header */
+header {width:100%; height:130px; background-color:rgba(26, 47, 54, .5); position:fixed; top:0; left:0; z-index:10;}
+header .inner{display:flex; justify-content: space-between;}
+header h1{width:200px; padding-top:25px; box-sizing:border-box;}
+header h1 img{width:100px;}
+header ul.gnb {width:700px; height:40px; display:flex;padding-top:90px;}
+header ul.gnb li{width:140px; color:#fff; text-align:center; line-height:40px; transition:.5s;}
+header ul.gnb li a{width:140px;}
+header ul.gnb li:hover{border-bottom: 1px solid #3BBEA8; color:#3BBEA8}
+
+/* name */
+.name{position: absolute; left:50%; top:50%;transform:translate(-50%,-50%);}
+
+.name h1{ font-size:130px;font-weight:bold; text-align:center;color:#ffffff; letter-spacing:0px; transition:.5s; -webkit-transition:.5s; -ms-transition:.5s; position: relative; padding:3px;
+}
+.name h1:before,
+.name h1:after{
+  content:"";
+  position: absolute;
+  height: 7px;
+  width: 0px;
+  background:#0077ff;
+  transition:100ms;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  opacity:0.3;
+  left:50%;
+}
+
+.name h1:before{bottom:0;}
+
+.name h1:after{top:0; color:#fff;}
+
+.name h1:hover{letter-spacing:30px; color:#008ca5;}
+
+.name h1:hover:before, .name h1:hover:after{width: 95%;opacity:1;left:0;}
+.name h2{
+  color:#f1ffb5;
+  text-align:center;
+  font-size:50px;
+  font-weight:100;
+  bottom:40px;
+  transition:1s;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  opacity:0.5;
+  width: 100%;
+}
+
+/* main video */
+.mainflex .bgvideo{width:100%;}
+.mainflex .bgvideo video{position:fixed; bottom:0; left:0;width:auto; z-index:-1;min-width: 100%; min-height: 100%;}
+
+
+/* main */
+main{width:100%;}
+main .mainflex{margin:0 auto; height:800px; position:relative; overflow: hidden; box-sizing:border-box;}
+main .mainflex img{width:350px; padding-left:38%; margin-top:50px;}
+
+main .fig1{width:100%;padding-top: 200px; height:880px; background-color:#fff;}
+
+main .fig1 .inner > h2{font-size:50px; text-align:center; padding-bottom:50px;}
+
+main .fig1 .profile {display:flex;width:1200px; height:400px;}
+main .fig1 .inner .profile .profileimg {width:300px; height:380px; background:url(../img/qwertqewrt.png) center/cover; margin-left:100px; }
+
+
+main .fig1 .profile .sub_profile{width:570px; height:300px; margin:0 auto;display:flex; padding-left: 50px; justify-content: center; flex-wrap: wrap; padding-top:25px;}
+
+main .fig1 .profile .sub_profile .profile1{width:220px; height:150px;}
+main .fig1 .profile .sub_profile .profile1 h2{font-size:20px; font-weight:700; padding-bottom:20px;}
+
+main .fig1 .profile .sub_profile .profile1 ul{display:flex;flex-direction: column;justify-content: space-between;}
+main .fig1 .profile .sub_profile .profile1 ul li{width:220px; display:flex;}
+main .fig1 .profile .sub_profile .profile1 ul li p {width:150px;}
+main .fig1 .profile .sub_profile .profile1 ul li p:first-child {width:50px; font-weight:700;}
+
+main .fig1 .profile .sub_profile .profile2{width:335px; height:150px; padding-left:15px; }
+main .fig1 .profile .sub_profile .profile2 h2{font-size:20px; font-weight:700; padding-bottom:20px;}
+main .fig1 .profile .sub_profile .profile2 ul{display:flex;flex-direction: column;justify-content: space-between; }
+main .fig1 .profile .sub_profile .profile2 ul li{width:400px; display:flex;}
+main .fig1 .profile .sub_profile .profile2 ul li p {width:200px;}
+main .fig1 .profile .sub_profile .profile2 ul li p:first-child {width:50px; font-weight:700;}
+
+main .fig1 .profile .sub_profile .profile2 ul li p:last-child {width:300px;}
+
+main .fig1 .profile .sub_profile .profile3 {width:570px; height:150px; padding-top:10px;}
+main .fig1 .profile .sub_profile .profile3 h2{font-size:20px; font-weight:700; padding-bottom:10px;}
+
+main .fig1 .profile4 {padding-left:100px;}
+main .fig1 .profile4 >.skills{width:100%; height:220px;}
+
+
+
+main .fig2 {padding: 100px 0;background-color:#3CB5BF;}
+main .fig2 h2 {font-size:50px; text-align:center; padding-bottom:50px;}
+main .fig2 .project .project1 {width:100%;display:flex; padding:40px;}
+
+main .fig2 .project .project1 img{width:550px;}
+
+main .fig2 .project .project1 .project1sm{padding-left:50px;}
+
+main .fig2 .project .project1 .project1sm>p{font-size:25px; font-weight:600;}
+main .fig2 .project .project1 .project1sm ul{display:flex;flex-direction: column; }
+
+main .fig2 .project .project1 .project1sm ul li{display:flex;}
+main .fig2 .project .project1 .project1sm ul span{display:block; padding:20px 0;}
+main .fig2 .project .project1 .project1sm ul {border-top:1px solid black; padding-top:10px;}
+main .fig2 .project .project1 .project1sm ul li p:first-child{font-weight:700; width:100px}
+
+main .fig2 .project .project1 .project1sm button {width:150px; height:30px; border:none; border-radius:10px; background-color:rgba(255, 255, 255, .5); transition:.5s; cursor:pointer;}
+
+main .fig2 .project .project1 .project1sm button:hover {background-color:#3BBEA8; color:#fff;}
+
+
+main .fig3{width:100%;padding: 135px 0;background-color:#fff8b5;}
+main .fig3 .inner > h2{font-size:50px; text-align:center; padding:100px 0 50px 0;}
+
+main .fig3 .inner .design .design_img ul{display:flex; width:1200px; flex-wrap: wrap;}
+main .fig3 .inner .design .design_img ul li{cursor:pointer; margin:25px; border-radius:25px; transition:.5s;}
+main .fig3 .inner .design .design_img ul li p{text-align:center; line-height:250px;font-size:20px; display:none; color:#fff; background-color:rgba(0, 0, 0, .5);}
+
+main .fig3 .inner .design .design_img ul li:hover{outline:1px solid #ffffff;outline-offset:-10px;}
+main .fig3 .inner .design .design_img ul li:hover p{display:block;border-radius:25px;}
+
+main .fig3 .inner .design .design_img ul li.design1{width:250px; height:250px; background:url(../img/design1.png) center/cover;}
+
+main .fig3 .inner .design .design_img ul li.design2{width:250px; height:250px; background:url(../img/design2.png) center/cover;}
+
+main .fig3 .inner .design .design_img ul li.design3{width:250px; height:250px; background:url(../img/cardnews1.png) center/cover;}
+
+main .fig3 .inner .design .design_img ul li.design4{width:250px; height:250px; background:url(../img/design3.png) center/cover;}
+
+main .fig3 .inner .design .design_img ul li.design5{width:250px; height:250px; background:url(../img/bookbanner.png) center/cover;}
+
+main .fig4{padding:100px 0 40px 0; box-sizing:border-box;}
+main .fig4 .circle {width:800px; height:800px; border-radius:50%;margin:0 auto; background-color:rgba(255, 255, 255,.8); position:relative;}
+main .fig4 .circle .contact .profileimg{width:200px; height:280px; background:url(../img/qwertqewrt.png) center/cover; margin:0 auto;}
+
+.b_circle{width:800px; height:800px; position:absolute; background-color:#3BBEA8; top:0; border-radius:50%; text-align:center; line-height:800px; display:none; z-index:9}
+.b_circle h3{font-size:50px; color:#fff;}
+/* .circle h2:hover + .b_circle{display:block;} */
+
+main .fig4 .circle h2{font-size:50px; text-align:center;padding:80px 0 30px 0;}
+main .fig4 .circle .contact .contact_text ul{display:flex; flex-direction: column; padding-top:50px;}
+main .fig4 .circle .contact .contact_text ul li{width:280px; display:flex; padding:10px 0;  margin:0 auto;}
+
+main .fig4 .circle .contact .contact_text ul li p:first-child{font-weight:800; padding-right:30px;}
+
+
+
+

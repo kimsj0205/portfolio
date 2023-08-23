@@ -4,20 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:700|Pinyon+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen"/>
   <link rel="stylesheet" href="./css/main.css" />
+  <script type="text/javascript" defer src="jquery.lightbox-0.5.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <div class="popup">
+  <div class="popup_wrap1">
+    <div class="popup1">
+      <img src="./img/design1.png" alt="상세페이지1">
+    </div>
+  </div>
+  <div class="popup_wrap2">
+    <div class="popup2">
+      <img src="./img/design2.png" alt="상세페이지2">
+    </div>
+  </div>
   <div class="popup_wrap3">
     <div class="popup3">
-      <img src="./img/design3.png" alt="상세페이지1">
+      <img src="./img/design3.png" alt="이벤트페이지">
     </div>
   </div>
   <div class="popup_wrap4">
     <div class="popup4">
-      <img src="./img/cardnews2.png" alt="cardnews">
+      <ul>
+        <li><img src="./img/cardnews1.png" alt="netflix cardnews1"></li>
+        <li><img src="./img/cardnews2.png" alt="netflix cardnews2"></li>
+        <li><img src="./img/cardnews3.png" alt="netflix cardnews3"></li>
+        <li><img src="./img/cardnews4.png" alt="netflix cardnews4"></li>
+        <li><img src="./img/cardnews5.png" alt="netflix cardnews5"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup_wrap5">
+    <div class="popup5">
+      <ul>
+        <li><img src="./img/bookbanner.png" alt="bookbanner"></li>
+        <li><img src="./img/bookbanner2.png" alt="bookbanner"></li>
+      </ul>
     </div>
   </div>
 </div>
@@ -28,8 +54,8 @@
       <ul class="gnb">
         <li class="Home"><a href="#">Home</a></li>
         <li><a href="#Profile">Profile</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#Design">Design</a></li>
+        <li><a href="#Project">Web</a></li>
+        <li><a href="#Design">Graphic</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
     </div>
@@ -74,17 +100,28 @@
                 <h2>Introduce</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis numquam illo necessitatibus inventore odio perspiciatis modi praesentium labore ipsam ad expedita, consectetur atque enim natus placeat! Fugiat, adipisci aut.</p>
               </div>
+            </div>
           </div>
         </div>
-        <div class="profile4">
-          <h2>skills</h2>
-          <div class="skills"></div>
+      </div>
+      <div class="fig5">
+        <div class="inner">
+          <div class="profile4">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="pie-chart pie-chart1"><span class="center">PS</span></div>
+              <div class="pie-chart pie-chart2"><span class="center">AI</span></div>
+              <div class="pie-chart pie-chart3"><span class="center">XD</span></div>
+              <div class="pie-chart pie-chart4"><span class="center">Html</span></div>
+              <div class="pie-chart pie-chart5"><span class="center">Css</span></div>
+              <div class="pie-chart pie-chart6"><span class="center">jquery</span></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     <div class="fig2" id="Project">
       <div class="inner">
-        <h2>Project</h2>
+        <h2>Web</h2>
         <div class="project">
           <div class="project1">
             <img src="./img/mockup1.png" alt="mockup1">
@@ -97,21 +134,35 @@
                 <li><p>참여도</p><p>100% 개인작업</p></li>
                 <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!</span></li>
               </ul>
-              <button><a href="#"  target='_blank'>사이트 바로가기</a></button>
+              <button><a href="https://kimsj0205.github.io/newbalance/" target='_blank'>사이트 바로가기</a></button>
             </div>
           </div>
-          <div class="project1">
-            <img src="./img/mockup1.png" alt="mockup1">
-            <div class="project1sm">
+          <div class="project2">
+            <img src="./img/mockup2.png" alt="mockup2">
+            <div class="project2sm">
               <p>PaikDaBang</p>
               <p>빽다방 홈페이지 리디자인</p>
+              <ul>
+                <li><p>Tpye</p><p>1920*1080 Adaptive Web</p></li>
+                <li><p>Tool</p><p>HTML, CSS, jQuery, Photoshop, XD</p></li>
+                <li><p>참여도</p><p>100% 개인작업</p></li>
+                <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!</span></li>
+              </ul>
+              <button><a href="https://kimsj0205.github.io/paikdabang/" target='_blank'>사이트 바로가기</a></button>
+            </div>
+          </div>
+          <div class="project3">
+            <img src="./img/mockup3.png" alt="mockup3">
+            <div class="project3sm">
+              <p>Aespa_profile</p>
+              <p>에스파 프로필 페이지</p>
               <ul>
                 <li><p>Tpye</p><p>1920*1080 Adaptive Web</p></li>
                 <li><p>Tool</p><p>HTML, CSS, Photoshop, XD</p></li>
                 <li><p>참여도</p><p>100% 개인작업</p></li>
                 <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos, nesciunt ipsa est, iure non quae officia veniam reiciendis quis expedita at tempore voluptates velit laboriosam cumque architecto ea nam!</span></li>
               </ul>
-              <button><a href="https://kimsj0205.github.io/paikdabang/" target='_blank'>사이트 바로가기</a></button>
+              <button><a href="https://kimsj0205.github.io/aespa_profile/" target='_blank'>사이트 바로가기</a></button>
             </div>
           </div>
         </div>
@@ -119,7 +170,7 @@
     </div>
     <div class="fig3" id="Design">
       <div class="inner">
-        <h2>Design</h2>
+        <h2>Graphic</h2>
         <div class="design">
           <div class="design_img">
             <ul>

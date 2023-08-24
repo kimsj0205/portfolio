@@ -62,6 +62,30 @@ $('.popup_wrap5').click(function(){
   $('.popup_wrap5').fadeOut();
 });
 
+// 6번째 팝업
+$('.design_img ul li').eq(5).click(function(){
+  $('.popup_wrap6').fadeIn();
+});
+$('.popup_wrap6').click(function(){
+  $('.popup_wrap6').fadeOut();
+});
+
+// 7번째 팝업
+$('.design_img ul li').eq(6).click(function(){
+  $('.popup_wrap7').fadeIn();
+});
+$('.popup_wrap7').click(function(){
+  $('.popup_wrap7').fadeOut();
+});
+
+// 6번째 팝업
+$('.design_img ul li').eq(7).click(function(){
+  $('.popup_wrap8').fadeIn();
+});
+$('.popup_wrap8').click(function(){
+  $('.popup_wrap8').fadeOut();
+});
+
 
 // 메뉴 클릭 시 이동
 
